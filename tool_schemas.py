@@ -100,41 +100,28 @@ TOOL_SCHEMAS = [
         "function": {
             "name": "rank_bundles",
             "description": (
-                "Run the deterministic bundle scorer. Pass in the flight results, hotel "
-                "results, the user's Garanti profile, and the cross-bank offer feed. "
-                "Returns the top N flight+hotel+payment-method bundles ranked by total "
-                "cost after all promotions, with a cost breakdown and explanatory notes "
-                "for each. Call this AFTER you've gathered all four data sources. "
-                "You can call it multiple times with different filtered inputs if the "
-                "user refines their preferences."
+                "Run the deterministic bundle scorer. Returns the top N "
+                "flight+hotel+payment-method bundles ranked by total cost after all "
+                "promotions, with a cost breakdown and explanatory notes for each. "
+                "Call this AFTER get_user_payment_profile, search_flights, "
+                "search_hotels, and get_cross_bank_offers have all been called. "
+                "Flight, hotel, and payment data are sourced automatically from those "
+                "previous calls — do NOT pass them here. Only supply budget_usd."
             ),
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "flights": {
-                        "type": "array",
-                        "items": {"type": "object"},
-                        "description": "The 'results' array from search_flights",
+                    "budget_usd": {
+                        "type": "number",
+                        "description": "Total trip budget in USD (flights + hotels combined)",
                     },
-                    "hotels": {
-                        "type": "array",
-                        "items": {"type": "object"},
-                        "description": "The 'results' array from search_hotels",
+                    "top_n": {
+                        "type": "integer",
+                        "default": 5,
+                        "description": "Maximum number of bundles to return",
                     },
-                    "garanti_profile": {
-                        "type": "object",
-                        "description": "The full object returned by get_user_payment_profile",
-                    },
-                    "cross_bank_feed": {
-                        "type": "object",
-                        "description": "The full object returned by get_cross_bank_offers",
-                    },
-                    "budget_usd": {"type": "number"},
-                    "top_n": {"type": "integer", "default": 5},
                 },
-                "required": [
-                    "flights", "hotels", "garanti_profile", "cross_bank_feed", "budget_usd"
-                ],
+                "required": ["budget_usd"],
             },
         },
     },

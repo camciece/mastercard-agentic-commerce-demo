@@ -17,7 +17,7 @@ def _flight_promo_for(card: dict, flight: dict, promotions: list[dict]) -> dict 
     """Find a promotion on `card` that applies to `flight`'s airline."""
     airline = flight["airline"]
     for p in promotions:
-        if p.get("card_id") == card["card_id"] and p["merchant"].lower() == airline.lower():
+        if p.get("card_id") == card["card_id"] and p.get("merchant", "").lower() == airline.lower():
             return p
     return None
 
@@ -32,12 +32,12 @@ def _hotel_promo_for(card: dict, promotions: list[dict]) -> dict | None:
 
 def _apply_percentage_promo(base_usd: float, promo: dict) -> tuple[float, str]:
     """Returns (discount_usd, human_readable_note)."""
-    if promo["discount_type"] not in ("percentage",):
+    if promo.get("discount_type") not in ("percentage",):
         return 0.0, ""
-    raw = base_usd * promo["discount_value"]
+    raw = base_usd * promo.get("discount_value", 0.0)
     cap = promo.get("max_discount_usd")
     discount = min(raw, cap) if cap is not None else raw
-    note = f"{promo['description']} → −${discount:.2f}"
+    note = f"{promo.get('description', 'discount')} → −${discount:.2f}"
     return discount, note
 
 
