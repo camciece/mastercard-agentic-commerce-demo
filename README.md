@@ -57,19 +57,15 @@ Each turn prints, in order:
 | `data/agent_pay_feed.json` | User's non-Garanti cards + their promotions |
 | `scenarios.md` | Suggested prompts and tweaks for experiments |
 
-## How to poke at it
+## Quirks and Improvements?
 
-Change the fixtures and watch the reasoning shift. The most interesting edits:
+Currently the data is mocked and the model generally halucinates if there's close enough responses from the tool call. e.g. Exact flight match except for date; pretend there's the same flight today as well (not unreasonable)
 
-  - Drop the Yapı Kredi Emirates promo → the Garanti Miles&Smiles bundle wins.
-  - Raise the İş Bankası Maximum Booking promo cap → it pulls the recommendation
-    toward a pricier 5-star hotel.
-  - Add a brand-new card with an outrageous promo → see whether the scorer + LLM
-    catches it.
+The logic can be adjusted to be more strict. Or not. It's a low effort PoC, treat it like one.
 
 See `scenarios.md` for specific things to try.
 
-## Architecture, one paragraph
+## "Architecture"
 
 The agent is gpt-oss (20B, GGUF Q4) running locally via Docker Model Runner,
 accessed through its OpenAI-compatible endpoint. Tools are local Python functions
