@@ -1,0 +1,84 @@
+{
+  "search_key": "DXB-2026-06-15-3N",
+  "currency": "USD",
+  "results": [
+    {
+      "hotel_id": "BK_HYATT_DXB_001",
+      "name": "Hyatt Regency Dubai Creek Heights",
+      "star_rating": 5,
+      "neighborhood": "Bur Dubai",
+      "guest_score": 8.7,
+      "price_per_night_usd": 185,
+      "total_usd": 555,
+      "breakfast_included": true,
+      "refundable": true,
+      "booking_genius_discount": 0.10,
+      "distance_to_business_district_km": 3.2
+    },
+    {
+      "hotel_id": "BK_NOVOTEL_DXB_014",
+      "name": "Novotel Dubai Al Barsha",
+      "star_rating": 4,
+      "neighborhood": "Al Barsha",
+      "guest_score": 8.2,
+      "price_per_night_usd": 110,
+      "total_usd": 330,
+      "breakfast_included": true,
+      "refundable": true,
+      "booking_genius_discount": 0.0,
+      "distance_to_business_district_km": 6.8
+    },
+    {
+      "hotel_id": "BK_FAIRMONT_DXB_007",
+      "name": "Fairmont Dubai",
+      "star_rating": 5,
+      "neighborhood": "Sheikh Zayed Road",
+      "guest_score": 8.9,
+      "price_per_night_usd": 220,
+      "total_usd": 660,
+      "breakfast_included": false,
+      "refundable": false,
+      "booking_genius_discount": 0.0,
+      "distance_to_business_district_km": 1.1
+    },
+    {
+      "hotel_id": "BK_IBIS_DXB_022",
+      "name": "ibis Dubai Al Barsha",
+      "star_rating": 3,
+      "neighborhood": "Al Barsha",
+      "guest_score": 7.6,
+      "price_per_night_usd": 68,
+      "total_usd": 204,
+      "breakfast_included": false,
+      "refundable": true,
+      "booking_genius_discount": 0.0,
+      "distance_to_business_district_km": 6.5
+    },
+    {
+      "hotel_id": "BK_ROVE_DXB_003",
+      "name": "Rove Downtown",
+      "star_rating": 4,
+      "neighborhood": "Downtown Dubai",
+      "guest_score": 8.5,
+      "price_per_night_usd": 135,
+      "total_usd": 405,
+      "breakfast_included": false,
+      "refundable": true,
+      "booking_genius_discount": 0.10,
+      "distance_to_business_district_km": 0.8
+    },
+    {
+      "hotel_id": "BK_TAJ_DXB_011",
+      "name": "Taj Dubai",
+      "star_rating": 5,
+      "neighborhood": "Business Bay",
+      "guest_score": 8.8,
+      "price_per_night_usd": 195,
+      "total_usd": 585,
+      "breakfast_included": true,
+      "refundable": false,
+      "booking_genius_discount": 0.0,
+      "distance_to_business_district_km": 1.5
+    }
+  ]
+}

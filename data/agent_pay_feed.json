@@ -1,0 +1,66 @@
+{
+  "user_id": "GRT-8842913",
+  "linked_cards": [
+    {
+      "card_id": "ykb_worldcard_3318",
+      "issuer": "Yapı Kredi",
+      "name": "Yapı Kredi Worldcard",
+      "network": "Mastercard",
+      "last_four": "3318",
+      "available_limit_try": 28000,
+      "rewards_program": "WorldPuan",
+      "points_balance": 920
+    },
+    {
+      "card_id": "isb_maximum_7755",
+      "issuer": "İş Bankası",
+      "name": "İş Bankası Maximum",
+      "network": "Mastercard",
+      "last_four": "7755",
+      "available_limit_try": 41000,
+      "rewards_program": "MaxiPuan",
+      "points_balance": 2110
+    },
+    {
+      "card_id": "akb_axess_1129",
+      "issuer": "Akbank",
+      "name": "Akbank Axess",
+      "network": "Mastercard",
+      "last_four": "1129",
+      "available_limit_try": 19500,
+      "rewards_program": "Chip-Para",
+      "points_balance": 540
+    }
+  ],
+  "active_promotions": [
+    {
+      "promo_id": "YKB-EK-2026-06",
+      "card_id": "ykb_worldcard_3318",
+      "merchant": "Emirates",
+      "description": "15% cashback on Emirates flights, max $80",
+      "discount_type": "percentage",
+      "discount_value": 0.15,
+      "max_discount_usd": 80,
+      "valid_until": "2026-06-20"
+    },
+    {
+      "promo_id": "ISB-BOOK-2026-Q2",
+      "card_id": "isb_maximum_7755",
+      "merchant": "Booking.com",
+      "description": "8% discount on Booking.com, no cap",
+      "discount_type": "percentage",
+      "discount_value": 0.08,
+      "max_discount_usd": null,
+      "valid_until": "2026-08-31"
+    },
+    {
+      "promo_id": "AKB-FZ-2026-06",
+      "card_id": "akb_axess_1129",
+      "merchant": "Flydubai",
+      "description": "5% Chip-Para earn on Flydubai bookings",
+      "discount_type": "points_earn",
+      "discount_value": 0.05,
+      "valid_until": "2026-07-15"
+    }
+  ]
+}

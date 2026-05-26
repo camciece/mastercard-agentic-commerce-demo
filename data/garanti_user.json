@@ -1,0 +1,51 @@
+{
+  "user_id": "GRT-8842913",
+  "name": "Ahmet Yılmaz",
+  "cards": [
+    {
+      "card_id": "grt_bonus_4421",
+      "name": "Garanti Bonus Platinum",
+      "type": "credit",
+      "network": "Mastercard",
+      "last_four": "4421",
+      "credit_limit_try": 75000,
+      "available_limit_try": 62300,
+      "rewards_program": "Bonus Points",
+      "points_balance": 1840,
+      "points_value_per_unit_try": 0.10
+    },
+    {
+      "card_id": "grt_miles_9087",
+      "name": "Garanti Miles&Smiles",
+      "type": "credit",
+      "network": "Mastercard",
+      "last_four": "9087",
+      "credit_limit_try": 50000,
+      "available_limit_try": 47500,
+      "rewards_program": "Turkish Airlines Miles",
+      "miles_balance": 38400,
+      "miles_value_estimate_usd": 410
+    }
+  ],
+  "active_promotions": [
+    {
+      "promo_id": "GRT-BOOK-2026-06",
+      "card_id": "grt_bonus_4421",
+      "merchant": "Booking.com",
+      "description": "10% instant discount on Booking.com",
+      "discount_type": "percentage",
+      "discount_value": 0.10,
+      "max_discount_usd": 50,
+      "valid_until": "2026-07-01"
+    },
+    {
+      "promo_id": "GRT-THY-2026-Q2",
+      "card_id": "grt_miles_9087",
+      "merchant": "Turkish Airlines",
+      "description": "2x miles on Turkish Airlines bookings",
+      "discount_type": "miles_multiplier",
+      "discount_value": 2.0,
+      "valid_until": "2026-06-30"
+    }
+  ]
+}
