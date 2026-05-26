@@ -1,4 +1,4 @@
-# trip-agent
+# mastercard-agentic-commerce-demo
 
 A personal PoC of the Garanti BBVA / Mastercard Agent Pay conversational
 commerce demo. Type a trip in natural language; the agent calls four mock

@@ -30,6 +30,46 @@
       "available_limit_try": 19500,
       "rewards_program": "Chip-Para",
       "points_balance": 540
+    },
+    {
+      "card_id": "hb_advantage_2277",
+      "issuer": "Halkbank",
+      "name": "Halkbank Advantage Mastercard",
+      "network": "Mastercard",
+      "last_four": "2277",
+      "available_limit_try": 32000,
+      "rewards_program": "Advantage Puan",
+      "points_balance": 1250
+    },
+    {
+      "card_id": "dzb_card_8843",
+      "issuer": "Denizbank",
+      "name": "Denizbank DenizbankCard",
+      "network": "Mastercard",
+      "last_four": "8843",
+      "available_limit_try": 38000,
+      "rewards_program": "Deniz Puan",
+      "points_balance": 870
+    },
+    {
+      "card_id": "teb_card_4492",
+      "issuer": "TEB",
+      "name": "TEB CEPTETEB Mastercard",
+      "network": "Mastercard",
+      "last_four": "4492",
+      "available_limit_try": 25000,
+      "rewards_program": "TEB Puan",
+      "points_balance": 430
+    },
+    {
+      "card_id": "qnb_card_6618",
+      "issuer": "QNB Finansbank",
+      "name": "QNB Finansbank CardFinans",
+      "network": "Mastercard",
+      "last_four": "6618",
+      "available_limit_try": 44000,
+      "rewards_program": "Finans Puan",
+      "points_balance": 1680
     }
   ],
   "active_promotions": [
@@ -61,6 +101,86 @@
       "discount_type": "points_earn",
       "discount_value": 0.05,
       "valid_until": "2026-07-15"
+    },
+    {
+      "promo_id": "HB-DL-2026-Q2",
+      "card_id": "hb_advantage_2277",
+      "merchant": "Delta",
+      "description": "12% cashback on Delta flights, max $100",
+      "discount_type": "percentage",
+      "discount_value": 0.12,
+      "max_discount_usd": 100,
+      "valid_until": "2026-09-30"
+    },
+    {
+      "promo_id": "HB-BOOK-2026-Q2",
+      "card_id": "hb_advantage_2277",
+      "merchant": "Booking.com",
+      "description": "10% discount on Booking.com, max $55",
+      "discount_type": "percentage",
+      "discount_value": 0.10,
+      "max_discount_usd": 55,
+      "valid_until": "2026-09-30"
+    },
+    {
+      "promo_id": "DZB-UA-2026-Q2",
+      "card_id": "dzb_card_8843",
+      "merchant": "United",
+      "description": "10% cashback on United flights, max $90",
+      "discount_type": "percentage",
+      "discount_value": 0.10,
+      "max_discount_usd": 90,
+      "valid_until": "2026-09-30"
+    },
+    {
+      "promo_id": "DZB-AF-2026-Q2",
+      "card_id": "dzb_card_8843",
+      "merchant": "Air France",
+      "description": "8% cashback on Air France flights, max $60",
+      "discount_type": "percentage",
+      "discount_value": 0.08,
+      "max_discount_usd": 60,
+      "valid_until": "2026-09-30"
+    },
+    {
+      "promo_id": "TEB-JL-2026-Q2",
+      "card_id": "teb_card_4492",
+      "merchant": "Japan Airlines",
+      "description": "10% cashback on Japan Airlines flights, max $100",
+      "discount_type": "percentage",
+      "discount_value": 0.10,
+      "max_discount_usd": 100,
+      "valid_until": "2026-09-30"
+    },
+    {
+      "promo_id": "TEB-ANA-2026-Q2",
+      "card_id": "teb_card_4492",
+      "merchant": "ANA",
+      "description": "8% cashback on ANA flights, max $80",
+      "discount_type": "percentage",
+      "discount_value": 0.08,
+      "max_discount_usd": 80,
+      "valid_until": "2026-09-30"
+    },
+    {
+      "promo_id": "QNB-IB-2026-Q2",
+      "card_id": "qnb_card_6618",
+      "merchant": "Iberia",
+      "description": "12% cashback on Iberia flights, max $65",
+      "discount_type": "percentage",
+      "discount_value": 0.12,
+      "max_discount_usd": 65,
+      "valid_until": "2026-09-30"
+    },
+    {
+      "promo_id": "QNB-BOOK-2026-Q2",
+      "card_id": "qnb_card_6618",
+      "merchant": "Booking.com",
+      "description": "9% discount on Booking.com, max $60",
+      "discount_type": "percentage",
+      "discount_value": 0.09,
+      "max_discount_usd": 60,
+      "valid_until": "2026-09-30"
     }
   ]
 }

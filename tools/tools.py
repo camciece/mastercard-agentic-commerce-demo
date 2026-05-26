@@ -40,6 +40,12 @@ def search_flights(
     data = _load("flights.json")
     results = data["results"]
 
+    results = [
+        r for r in results
+        if r["origin"].upper() == origin.upper()
+        and r["destination"].upper() == destination.upper()
+    ]
+
     if time_preference:
         def in_window(iso: str) -> bool:
             hour = datetime.fromisoformat(iso).hour
@@ -72,6 +78,8 @@ def search_hotels(
 ) -> dict[str, Any]:
     data = _load("hotels.json")
     results = data["results"]
+
+    results = [r for r in results if r.get("city", "").lower() == city.lower()]
 
     if max_price_per_night_usd is not None:
         results = [r for r in results if r["price_per_night_usd"] <= max_price_per_night_usd]
